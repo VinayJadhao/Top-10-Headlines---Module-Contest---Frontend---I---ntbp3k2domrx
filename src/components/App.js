@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../styles/App.css';
 
 const posts= (category)=>{
-  const API_KEY="78544628fceb35db38810bc69836cc04"
+  const API_KEY="a1741280db6dbc554c889a31544851b7"
   let url=`https://gnews.io/api/v4/top-headlines?category=${category}&apikey=${API_KEY}&max=10&lang=en`;
   return fetch(url)
 }
@@ -49,7 +49,7 @@ const App = () => {
             <h3 className='news-title'>{item.title}</h3>
             <section className='new-content-author'>
               <p className='news-description'>{item.description}</p>
-              <p className='news-source'><strong>Source:</strong>{item.source.name}</p>
+              <p className='news-source'><strong>Source: </strong>{item.source.name}</p>
             </section>
           </section>
         </li>)
