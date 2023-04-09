@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../styles/App.css';
 
 const posts= (category)=>{
-  const API_KEY="78544628fceb35db38810bc69836cc04"
+  const API_KEY="1d73dabbc2332b14eec465e0177b2a0a"
   let url=`https://gnews.io/api/v4/top-headlines?category=${category}&apikey=${API_KEY}&max=10&lang=en`;
   return fetch(url)
 }
